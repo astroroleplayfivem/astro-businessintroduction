@@ -1,0 +1,78 @@
+[
+    {
+        "owner": "Faith Marie",
+        "location": "Beach",
+        "updatedAt": 1776716851,
+        "hiring": true,
+        "applyText": "Visit the Location to apply for a job at the door!",
+        "image": "https://cdn.discordapp.com/attachments/1374688370852106375/1495672478968709170/image.png?ex=69e7190b&is=69e5c78b&hm=0195826e7cac4072135931962bbf2d3215909980afa523b503f88c391bfd6d9e&",
+        "status": "Open",
+        "description": "Burgershot is currently owned by our very own Faith Marie and is one of the oldest businesses here in Astro. \n\nBe sure to join contact her if you are looking for a job!",
+        "label": "Burgershot",
+        "category": "Food",
+        "id": "burgershot",
+        "coords": {
+            "x": -1189.18,
+            "y": -892.16,
+            "z": 13.8
+        },
+        "contact": "Services App"
+    },
+    {
+        "owner": "Tommy Watterson",
+        "location": "Highway",
+        "updatedAt": 1776716893,
+        "hiring": true,
+        "applyText": "Visit the Location to apply for a job at the door!",
+        "image": "https://cdn.discordapp.com/attachments/1374688370852106375/1495673252444372992/image.png?ex=69e719c3&is=69e5c843&hm=ed1d764f357d3a95922cfd3da39091900efaf7c8a68fa58401501cdf526a5a36&",
+        "status": "Open",
+        "description": "Rideout Customs is owned by our very own City Manager Tommy Watterson!",
+        "label": "Rideout Customs",
+        "category": "Mechanic",
+        "id": "rideout_customs",
+        "coords": {
+            "x": 588.73,
+            "y": -167.09,
+            "z": 54.52
+        },
+        "contact": "Services App"
+    },
+    {
+        "owner": "Mary Anne",
+        "location": "Little Seoul",
+        "updatedAt": 1776716919,
+        "hiring": true,
+        "applyText": "Visit the Location to apply for a job at the door!",
+        "image": "https://cdn.discordapp.com/attachments/1374688370852106375/1495673935940026408/image.png?ex=69e71a66&is=69e5c8e6&hm=85e4782f464650edd1699fa1fdc88f952e13c431c939b0c61c39b1b86e07adb0&",
+        "status": "Open",
+        "description": "A place to buy food and pet cats!",
+        "label": "Cat Cafe",
+        "category": "Food",
+        "id": "cat_cafe",
+        "coords": {
+            "x": -582.15,
+            "y": -1063.43,
+            "z": 22.35
+        },
+        "contact": "Services App"
+    },
+    {
+        "owner": "Gerald Dean",
+        "location": "North Vinewood",
+        "updatedAt": 1776717159,
+        "hiring": true,
+        "applyText": "Visit the Location to apply for a job at the door!",
+        "image": "https://cdn.discordapp.com/attachments/1299084074207412315/1495884850102534205/image.png?ex=69e7ded4&is=69e68d54&hm=2f76a8bd31162f89f15a596b7597a5e7f9c50e816ed6644c50094eb7ba0e01a7",
+        "status": "Open",
+        "description": "Tequilala , business owned by Gerand Dean. Located right at North Vinewood.",
+        "label": "Tequilala",
+        "category": "Nightlife",
+        "id": "tequilala",
+        "coords": {
+            "x": -561.41,
+            "y": 287,
+            "z": 82.18
+        },
+        "contact": "Services App"
+    }
+]
