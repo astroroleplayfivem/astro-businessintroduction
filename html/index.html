@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Business Directory</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app" class="hidden">
+    <div class="frame">
+      <div class="topbar">
+        <div>
+          <div class="eyebrow" id="modeEyebrow">City Starter Directory</div>
+          <h1 id="modeTitle">Business Introduction</h1>
+          <p id="modeDescription">Browse local businesses and head to their location to apply in person.</p>
+        </div>
+        <div class="topbar-actions">
+          <button id="switchToPublicBtn" class="btn ghost hidden">Public Board</button>
+          <button id="switchToAdminBtn" class="btn ghost hidden">Admin Panel</button>
+          <button id="closeBtn" class="btn close">Ã—</button>
+        </div>
+      </div>
+
+      <div id="publicView" class="view">
+        <div class="toolbar">
+          <input id="searchInput" type="text" placeholder="Search business, owner, location..." />
+          <select id="categoryFilter"></select>
+          <label class="checkbox-row"><input id="hiringOnly" type="checkbox" /> Hiring only</label>
+        </div>
+
+        <div id="businessGrid" class="business-grid"></div>
+        <div id="emptyState" class="empty-state hidden">No businesses match the current filter.</div>
+      </div>
+
+      <div id="adminView" class="view hidden">
+        <div class="admin-banner">
+          <div>
+            <strong>Admin Management Panel</strong>
+            <div class="helper">Anything saved here updates the public board for players.</div>
+          </div>
+          <div class="helper">Only direct Discord CDN/media image links are allowed.</div>
+        </div>
+
+        <div class="editor-layout">
+          <div class="editor-list-wrap">
+            <div class="editor-list-header">
+              <h2>Businesses</h2>
+              <button id="newBusinessBtn" class="btn primary">+ Add Business</button>
+            </div>
+            <div id="editorList" class="editor-list"></div>
+          </div>
+
+          <div class="editor-form-wrap">
+            <div class="editor-form-header">
+              <h2 id="editorTitle">New Business</h2>
+              <div class="helper">This panel controls what shows on the public directory.</div>
+            </div>
+
+            <div class="editor-form">
+              <div class="form-grid">
+                <label>
+                  <span>Business ID</span>
+                  <input id="fieldId" type="text" placeholder="burgershot" />
+                </label>
+                <label>
+                  <span>Business Name</span>
+                  <input id="fieldLabel" type="text" placeholder="BurgerShot" />
+                </label>
+                <label>
+                  <span>Category</span>
+                  <select id="fieldCategory"></select>
+                </label>
+                <label>
+                  <span>Status</span>
+                  <input id="fieldStatus" type="text" placeholder="Open" />
+                </label>
+                <label>
+                  <span>Owner</span>
+                  <input id="fieldOwner" type="text" placeholder="John Doe" />
+                </label>
+                <label>
+                  <span>Contact</span>
+                  <input id="fieldContact" type="text" placeholder="555-0001 / @discord" />
+                </label>
+                <label>
+                  <span>Location</span>
+                  <input id="fieldLocation" type="text" placeholder="Innocence Blvd" />
+                </label>
+                <label class="checkbox-box">
+                  <span>Hiring</span>
+                  <input id="fieldHiring" type="checkbox" />
+                </label>
+                <label class="full">
+                  <span>Main Image (Discord link only)</span>
+                  <input id="fieldImage" type="text" placeholder="https://cdn.discordapp.com/...png" />
+                </label>
+                <label>
+                  <span>Waypoint X</span>
+                  <input id="fieldX" type="number" step="0.01" />
+                </label>
+                <label>
+                  <span>Waypoint Y</span>
+                  <input id="fieldY" type="number" step="0.01" />
+                </label>
+                <label>
+                  <span>Waypoint Z</span>
+                  <input id="fieldZ" type="number" step="0.01" />
+                </label>
+                <label class="full">
+                  <span>Description</span>
+                  <textarea id="fieldDescription" rows="5" placeholder="Short business portfolio description..."></textarea>
+                </label>
+              </div>
+
+              <div class="preview-card">
+                <img id="previewImage" src="" alt="Preview" />
+                <div class="preview-copy">
+                  <div class="preview-label" id="previewLabel">Business Preview</div>
+                  <div class="preview-meta" id="previewMeta">Owner â€¢ Location</div>
+                </div>
+              </div>
+
+              <div class="editor-actions">
+                <button id="saveBusinessBtn" class="btn primary">Save Business</button>
+                <button id="deleteBusinessBtn" class="btn danger">Delete Business</button>
+                <button id="backToPublicBtn" class="btn ghost">Open Public Board</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
